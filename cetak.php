@@ -22,6 +22,10 @@ $result = mysqli_query($con, "SELECT * FROM peserta");
             <th>Pilihan 1</th>
             <th>Pilihan 2</th>
             <th>Pilihan 3</th>
+            <th>Pilihan 4</th>
+            <th>Pilihan 5</th>
+            <th>Pilihan 6</th>
+            <th>Pilihan 7</th>
             <th>Alasan</th>
         </tr>
         <?php
@@ -34,6 +38,10 @@ $result = mysqli_query($con, "SELECT * FROM peserta");
             echo "<td>" . $user_data['Pilihan1'] . "</td>";
             echo "<td>" . $user_data['Pilihan2'] . "</td>";
             echo "<td>" . $user_data['Pilihan3'] . "</td>";
+            echo "<td>" . $user_data['Pilihan4'] . "</td>";
+            echo "<td>" . $user_data['Pilihan5'] . "</td>";
+            echo "<td>" . $user_data['Pilihan6'] . "</td>";
+            echo "<td>" . $user_data['Pilihan7'] . "</td>";
             echo "<td>" . $user_data['Alasan'] . "</td>";
             echo "<td><a href='cetak_data.php?id=$user_data[id]'>Cetak Data</a>";
         }
